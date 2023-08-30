@@ -1,0 +1,35 @@
+<div class="banner">
+    <div class="container">
+        <div class="header row py-5">
+            <div class="headings">
+            <h1>Invest in the future of currency</h1>
+            <h5 class="mt-4"> "Crypto Hub" is your one-stop destination for up-to-date information on the current situation of various cryptocurrencies. Crypto Hub provides you with real-time, accurate, and in-depth information about all the major cryptocurrencies that are shaping the future of finance. Whether you're a seasoned crypto investor or a curious beginner, Crypto Hub has you all covered.</h5>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+</div>
+<br>    
+<div class="container-fluid">
+    <div class="trending px-4">Trending Currencies</div>
+    <div class="row" >
+            <div class="col col-width" *ngFor="let row of bannerData; let i =index">
+                <div class="card" (click)="gotoDetails(row)">
+                    <div class="card-header" style="align-self: center;">
+                        <span>{{i+1}}.</span>
+                    <img [src]="row.image" alt="100" class="img" alt="">
+                    </div>
+                    <div class="card-body" style="align-self: center;">
+                        <div style="text-align: center;"><h5 class="card-title">{{row.symbol | uppercase}}</h5></div>
+                        <div style="text-align: center;"><span class="text-danger">{{row.market_cap_change_percentage_24h}}%</span></div>
+                        <div style="text-align: center;"><p class="card-text">{{row.current_price | currency: currency}}</p></div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+<br>
+<div class="container-fluid d-grid gap-2">
+    <button class="btn" style="margin-bottom: 10px;" (click)="gotoCryptoList()" type="button">View More</button>
+</div>

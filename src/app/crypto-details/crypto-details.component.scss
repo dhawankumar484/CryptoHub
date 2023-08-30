@@ -1,0 +1,127 @@
+* {
+    color: #fff;
+}
+
+// Back Button
+.button-back {
+    margin: 1% 0px 2px 4px; 
+    border-radius: 50% !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none !important;
+    padding: 6px 12px !important;
+    transition: background-color 1s, transform 0.5s;
+}
+  
+.button-back:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    -webkit-transform: translateX(-5px);
+    -webkit-box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+    -moz-box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+    box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+}
+
+// Crytocurrency image and details
+.img {
+    background: transparent;
+    margin: auto;
+    flex-direction: column;
+    img {
+        margin: auto;
+        display: flex;
+        width:30%;
+    }
+}
+
+.details {
+    width: 100%;
+    display: inline;
+    margin-top: 25px;
+    align-items: left;
+    flex-direction: column;
+    h3 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h6 {
+        width: 100%;
+        padding: 25px;
+        text-align: justify;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+}
+
+.more-detail {
+    padding: 10px;
+    margin: 10px;
+    line-height: 50px;
+    .title {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .value {
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+
+// Time change buttons
+.changeTime{
+    margin-bottom: 13px;
+}
+
+.changeTime input[type="radio"] {
+    display: none;
+}
+
+.changeTime input[type="radio"]:checked + label {
+    background: #105D97;
+}
+
+.btn-custom {
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    padding: 6px 0;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    border: 1px solid #fff;
+    width: 23%;
+    cursor: pointer;
+}
+
+.btn-custom:focus {
+    background: #105D97;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid #105D97;
+}
+
+@media (min-width: 992px){
+    .details {
+        width: 30%;
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        flex-direction: column;
+        border-right: 2px solid grey;
+    }
+
+    .img {
+        background: transparent;
+        margin: auto;
+        flex-direction: column;
+        img {
+            margin: auto;
+            display: flex;
+            width:50%;
+        }
+    }
+    .changeTime{
+        margin-bottom: 0px;
+    }
+}

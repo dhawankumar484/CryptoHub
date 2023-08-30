@@ -1,0 +1,67 @@
+// Back button
+button {
+  margin: 1% 0px 5px 4px; 
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none !important;
+  padding: 6px 12px !important;
+  transition: background-color 1s, transform 0.5s;
+}
+  
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  -webkit-transform: translateX(-5px);
+  -webkit-box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+  -moz-box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+  box-shadow: 5px 0px 18px 0px rgba(105,105,105,0.8);
+}
+
+// Currencies list and table header and rows
+.CurrenciesList{
+  color: white;
+  font-size: 38px;
+}
+
+table {
+  width: 100%;
+}
+  
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+  
+td, th {
+  width: 25%;
+} 
+
+th:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.trRows:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+}
+
+:host ::ng-deep .mat-sort-header-content {
+  color: #fff;
+}
+
+:host ::ng-deep .mat-paginator-outer-container {
+  background-color: rgb(36, 37, 37);
+}
+
+:host ::ng-deep tr.mat-header-row {
+  background-color: #105D97;
+}
+
+:host ::ng-deep tr.mat-row {
+  height: 70px;
+}

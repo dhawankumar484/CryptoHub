@@ -1,0 +1,11 @@
+<mat-toolbar class="head px-4">
+    <div routerLink="/home" class="img col-6"></div>
+    <!-- <img src="../../assets/logo2.png" routerLink="/home" alt=""> -->
+    <span class="example-spacer"></span>
+    <mat-form-field appearance="outline">
+    <mat-select  (valueChange)="changeCurrency($event)" class="selectCurrency text-sm" [(ngModel)]="selectedCurrency">
+        <mat-option  selected value="INR">INR</mat-option>
+        <mat-option  value="USD">USD</mat-option>
+    </mat-select>
+    </mat-form-field>
+</mat-toolbar>
